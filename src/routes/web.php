@@ -41,6 +41,7 @@ Route::get('/trayectos', [ServicesController::class, 'trayectos'])->name('trayec
 Route::get('/barcos', [BarcoController::class, 'barcos'])->name('barcos');
 Route::get('/contact', [ServicesController::class, 'contact'])->name('contact');
 Route::get('/create', [BarcoController::class, 'create'])->name('barcos.create');
+Route::post('/barcos', [BarcoController::class, 'store'])->name('barcos.store');
 Route::get('/ecologicos', [BarcoController::class, 'ecologicos'])->name('barcos.ecologicos');
 //Route::view('/', 'landing.index')->name('home');
 //Route::view('/about', 'landing.about')->name('about');
