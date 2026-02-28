@@ -1,5 +1,10 @@
 @extends('landing.layouts.landing')
 @section('title', 'Nuestra flota')
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/barcos.css') }}">
+@endpush
+
 @section('header')
     <h1>Nuestros barcos</h1>
 @endsection

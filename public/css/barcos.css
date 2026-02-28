@@ -1,0 +1,146 @@
+
+.barcos-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.barco-card {
+    border: 1px solid #5965cd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; 
+}
+
+.barco-card:hover {
+    transform: translateY(-5px);
+}
+
+.barco-card .card-title {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.barco-card .card-body p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.barco-card .card-body strong {
+    color: #555;
+}
+
+.barco-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+
+.barco-card .ecologico {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.barco-card .no-ecologico {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.barco-action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.barco-action-buttons button {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    min-width: 120px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.barco-action-buttons .btn-delete {
+    background-color: #e3342f; 
+    color: white;
+}
+
+.barco-action-buttons .btn-delete:hover {
+    background-color: #cc1f1a;
+}
+
+.barco-action-buttons .btn-update {
+    background-color: #5965cd; 
+    color: white;
+}
+
+.barco-action-buttons .btn-update:hover {
+    background-color: #434ea2;
+}
+
+
+.main-action-buttons {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-action-buttons a {
+    background-color: #5965cd;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.main-action-buttons a:hover {
+    background-color: #434ea2;
+}
+
+
+.barcos-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.barcos-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barcos-summary li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.barcos-summary p {
+    font-weight: bold;
+    color: #333;
+}

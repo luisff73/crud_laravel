@@ -7,6 +7,7 @@
         @yield('title')
     </title>
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    @stack('styles')
 </head>
 <body>
 
